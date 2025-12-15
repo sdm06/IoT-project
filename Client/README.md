@@ -65,20 +65,13 @@ Visualizes the correlation between **Signal Strength (dBm)**, **Latency (ms)**, 
 * Node.js **v16+**
 * npm or yarn
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/telemetry-dashboard.git
-cd telemetry-dashboard
-```
-
-### 2. Install Dependencies
+### 1. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Configure Environment
+### 2. Configure Environment
 
 Edit `baseURL` in src/api/axios.js to define your backend API endpoint:
 
@@ -86,7 +79,7 @@ Edit `baseURL` in src/api/axios.js to define your backend API endpoint:
 baseURL: 'https://iot-esp32-api-23ffc2af.azurewebsites.net/api'
 ```
 
-### 4. Run the Development Server
+### 3. Run the Development Server
 
 ```bash
 npm run dev
