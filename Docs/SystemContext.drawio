@@ -1,0 +1,171 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" version="29.2.7" pages="2">
+  <diagram name="The System Context diagram" id="TplU1QoLT9GUznad7KPY">
+    <mxGraphModel dx="1414" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ctx_1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="&lt;b&gt;IT Admin / Helpdesk&lt;/b&gt;&lt;div&gt;[Person]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="110" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="&lt;b&gt;NetOps Team&lt;/b&gt;&lt;div&gt;[Person]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="110" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="&lt;b&gt;Cybersecurity Team&lt;/b&gt;&lt;div&gt;[Person]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="110" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="&lt;b&gt;Facility Management&lt;/b&gt;&lt;div&gt;[Person]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="110" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_5" parent="1" style="shape=C4_SoftwareSystem;metaEdit=1;whiteSpace=wrap;html=1;metaData=&quot;{&quot;title&quot;:&quot;Software System&quot;,&quot;description&quot;:&quot;Monitors Wi-Fi RF spectrum, provides dashboards, and alerts on security threats.&quot;}&quot;;align=left;spacingLeft=10;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;RF &amp;amp; Wi-Fi Monitoring System&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;[Software System]&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Monitors Wi-Fi RF spectrum via Azure Cloud, provides dashboards, and alerts on security threats.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="240" x="440" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_6" parent="1" style="shape=C4_System_Ext;metaEdit=1;whiteSpace=wrap;html=1;metaData=&quot;{&quot;title&quot;:&quot;External Software System&quot;,&quot;description&quot;:&quot;The 2.4GHz and 5GHz bands containing all Wi-Fi signals.&quot;}&quot;;align=left;spacingLeft=10;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;Wi-Fi RF Environment&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;[External System]&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;The 2.4GHz and 5GHz bands&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="240" x="440" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_1" edge="1" parent="1" source="ctx_1" target="ctx_5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_1" connectable="0" parent="edge_1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Views live data and reports" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_2" edge="1" parent="1" source="ctx_2" target="ctx_5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_2" connectable="0" parent="edge_2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Views historical data and heatmaps" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_3" edge="1" parent="1" source="ctx_3" target="ctx_5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_3" connectable="0" parent="edge_3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Receives alerts and manages &#39;whitelist&#39;" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_4" edge="1" parent="1" source="ctx_4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="ctx_5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="410" as="sourcePoint" />
+            <mxPoint x="500" y="330" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="410" />
+              <mxPoint x="360" y="360" />
+              <mxPoint x="500" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_4" connectable="0" parent="edge_4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Compares before/after reports" vertex="1">
+          <mxGeometry relative="1" x="-0.2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_5" edge="1" parent="1" source="ctx_5" target="ctx_6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_5" connectable="0" parent="edge_5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Scans" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FDRNWlEMCGB2ZgS0ZPDZ-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=24;" value="The System Context diagram" vertex="1">
+          <mxGeometry height="100" width="390" x="270" y="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="kk2Op5nV_4j5ja8NJg48" name="The Container diagram">
+    <mxGraphModel dx="2480" dy="1918" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="&lt;b&gt;IT Admin / Helpdesk&lt;/b&gt;&lt;div&gt;[Person]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="40" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="&lt;b&gt;NetOps Team&lt;/b&gt;&lt;div&gt;[Person]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="40" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="&lt;b&gt;Cybersecurity Team&lt;/b&gt;&lt;div&gt;[Person]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="40" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="&lt;b&gt;Facility Management&lt;/b&gt;&lt;div&gt;[Person]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="40" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="shape=C4_Boundary;whiteSpace=wrap;html=1;dashed=1;align=left;verticalAlign=bottom;spacingLeft=10;metaData=&quot;{&quot;title&quot;:&quot;Software System&quot;,&quot;description&quot;:&quot;&quot;}&quot;;" value="&lt;b&gt;RF &amp;amp; Wi-Fi Monitoring System&lt;/b&gt;&lt;div&gt;[Software System]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="620" width="870" x="220" y="70" as="geometry" />
+        </mxCell>
+        <object label="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;React.js Frontend&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;[Container: React App]&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Provides a real-time &#39;health map&#39;, historical reports, and management UI.&lt;/div&gt;" id="12">
+          <mxCell parent="11" style="shape=C4_Container;metaEdit=1;whiteSpace=wrap;html=1;metaData=&quot;{&quot;title&quot;:&quot;Container&quot;,&quot;description&quot;:&quot;Provides a real-time &#39;health map&#39;, historical reports, and management UI.&quot;,&quot;technology&quot;:&quot;React.js&quot;}&quot;;align=left;spacingLeft=10;" vertex="1">
+            <mxGeometry height="120" width="230" x="40" y="100" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="13" parent="11" style="shape=C4_Container;metaEdit=1;whiteSpace=wrap;html=1;metaData=&quot;{&quot;title&quot;:&quot;Container&quot;,&quot;description&quot;:&quot;Low-cost device that scans Wi-Fi bands.&quot;,&quot;technology&quot;:&quot;ESP32 (C++/Arduino)&quot;}&quot;;align=left;spacingLeft=10;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;Monitoring Sensor&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;[Container: ESP32 Device]&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Low-cost device that scans Wi-Fi bands and sends telemetry.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="230" x="40" y="460" as="geometry" />
+        </mxCell>
+        <object label="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;Data Store&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;[Container: Azure Cosmos DB]&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Stores aggregated time-series data, alerts, and the corporate SSID &#39;whitelist&#39;.&lt;/div&gt;" id="14">
+          <mxCell parent="11" style="shape=C4_Database;metaEdit=1;whiteSpace=wrap;html=1;metaData=&quot;{&quot;title&quot;:&quot;Container&quot;,&quot;description&quot;:&quot;Stores aggregated time-series data from all sensors and the corporate SSID &#39;whitelist&#39;.&quot;,&quot;technology&quot;:&quot;NoSQL&quot;}&quot;;align=left;spacingLeft=10;" vertex="1">
+            <mxGeometry height="120" width="220" x="610" y="280" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="new_iothub" parent="11" style="shape=C4_Container;metaEdit=1;whiteSpace=wrap;html=1;metaData=&quot;{&quot;title&quot;:&quot;Container&quot;,&quot;description&quot;:&quot;Ingests telemetry from thousands of ESP32 sensors securely.&quot;,&quot;technology&quot;:&quot;Azure IoT Hub&quot;}&quot;;align=left;spacingLeft=10;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;IoT Ingestion&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;[Container: Azure IoT Hub]&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Ingests telemetry from ESP32 sensors securely.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="220" x="400" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="new_func" parent="11" style="shape=C4_Container;metaEdit=1;whiteSpace=wrap;html=1;metaData=&quot;{&quot;title&quot;:&quot;Container&quot;,&quot;description&quot;:&quot;Processes API requests from UI and handles data ingestion logic.&quot;,&quot;technology&quot;:&quot;Azure Function App&quot;}&quot;;align=left;spacingLeft=10;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;API &amp;amp; Backend Logic&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;[Container: Azure Function App]&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Serverless API that processes UI requests and handles data ingestion triggers.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="220" x="500" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="20" edge="1" parent="11" source="new_func" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="14" value="Reads/Writes Data&lt;div&gt;[Azure SDK]&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="70" />
+              <mxPoint x="780" y="210" />
+              <mxPoint x="720" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21" edge="1" parent="11" source="13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="new_iothub" value="Sends MQTT Telemetry">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_func_iot" edge="1" parent="11" source="new_iothub" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="new_func" value="Triggers Ingestion&lt;br&gt;[Event Grid / Trigger]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="190" />
+              <mxPoint x="610" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_react_func" edge="1" parent="11" source="12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="new_func" value="API Calls (HTTPS/JSON)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="shape=C4_System_Ext;metaEdit=1;whiteSpace=wrap;html=1;metaData=&quot;{&quot;title&quot;:&quot;External Software System&quot;,&quot;description&quot;:&quot;The 2.4GHz and 5GHz bands containing all Wi-Fi signals (corporate, neighbor, rogue, etc).&quot;}&quot;;align=left;spacingLeft=10;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;Wi-Fi RF Environment&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;[External System]&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;The 2.4GHz and 5GHz bands&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="230" x="260" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="16" edge="1" parent="1" source="7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="12" value="Views live data and reports">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" edge="1" parent="1" source="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="12" value="Views historical data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" edge="1" parent="1" source="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="12" value="Manages security alerts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19" edge="1" parent="1" source="10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="12" value="Compares reports">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="400" />
+              <mxPoint x="190" y="300" />
+              <mxPoint x="260" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22" edge="1" parent="1" source="13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="15" value="Scans">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bIIUyVcXYS3J_C2939Pd-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=30;" value="The Container diagram" vertex="1">
+          <mxGeometry height="100" width="390" x="220" y="-10" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
