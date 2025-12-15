@@ -20,11 +20,11 @@ Access the specific documentation and code for each module below:
 
 | Folder | Module | Description |
 | :--- | :--- | :--- |
-| **[📂 Terraform](https://github.com/sdm06/IoT-project/tree/main/Terraform)** | **Infrastructure** | IaC scripts to provision the Azure Cloud backend (IoT Hub, Cosmos DB, Functions). |
-| **[📂 deviceCode](https://github.com/sdm06/IoT-project/tree/main/deviceCode)** | **Firmware** | C++ code for ESP32 sensors tuned specifically for **2.4GHz** band scanning. |
-| **[📂 FunctionApp](https://github.com/sdm06/IoT-project/tree/main/FunctionApp)** | **Backend** | Python Azure Functions for data ingestion, processing, and API access. |
-| **[📂 Client](https://github.com/sdm06/IoT-project/tree/main/Client)** | **Frontend** | Dashboard application to visualize signal health maps and alerts. |
-| **[📂 Docs](https://github.com/sdm06/IoT-project/tree/main/Docs)** | **Documentation** | Contains the **Business Context PDF**, **C4 Architecture Diagram**, and **Cost Calculations**. |
+| **[📂 Terraform](https://github.com/sdm06/IoT-project/tree/master/Terraform)** | **Infrastructure** | IaC scripts to provision the Azure Cloud backend (IoT Hub, Cosmos DB, Functions). |
+| **[📂 deviceCode](https://github.com/sdm06/IoT-project/tree/master/deviceCode)** | **Firmware** | C++ code for ESP32 sensors tuned specifically for **2.4GHz** band scanning. |
+| **[📂 FunctionApp](https://github.com/sdm06/IoT-project/tree/master/FunctionApp)** | **Backend** | Python Azure Functions for data ingestion, processing, and API access. |
+| **[📂 Client](https://github.com/sdm06/IoT-project/tree/master/Client)** | **Frontend** | Dashboard application to visualize signal health maps and alerts. |
+| **[📂 Docs](https://github.com/sdm06/IoT-project/tree/master/Docs)** | **Documentation** | Contains the **Business Context PDF**, **C4 Architecture Diagram**, and **Cost Calculations**. |
 
 
 -----
