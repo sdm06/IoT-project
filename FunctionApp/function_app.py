@@ -9,7 +9,7 @@ import datetime
 app = func.FunctionApp()
 
 # --- CONFIGURATION ---
-SECRET_KEY = "my_super_secret_key_change_this_later"
+SECRET_KEY = "super_secret_key"
 
 # =================================================================================
 # 1. LOGIN (Get Token)
@@ -83,7 +83,6 @@ def iot_ingest(event: func.EventHubEvent, outputDocument: func.Out[func.Document
 @app.cosmos_db_input(arg_name="documents", 
                      database_name="IoTData", 
                      container_name="Telemetry",
-                     # --- THE FIX IS HERE: Filter for 'TELEMETRY' only ---
                      sql_query="SELECT TOP 10 * FROM c WHERE c.type = 'TELEMETRY' ORDER BY c._ts DESC",
                      connection="COSMOS_DB_CONNECTION_STRING")
 def get_telemetry(req: func.HttpRequest, documents: func.DocumentList) -> func.HttpResponse:
