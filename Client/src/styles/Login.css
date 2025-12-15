@@ -1,0 +1,123 @@
+/* src/styles/Login.css */
+
+:root {
+    /* Reuse variables for consistency */
+    --bg-dark: #18181b;
+    --bg-card: #27272a;
+    --text-main: #f4f4f5;
+    --text-muted: #a1a1aa;
+    --accent-color: #00d4ff;
+    --accent-glow: rgba(0, 212, 255, 0.25);
+    --input-bg: #3f3f46;
+    --danger: #ef4444;
+}
+
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-dark);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.login-card {
+    padding: 40px;
+    background: var(--bg-card);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid #3f3f46;
+    /* Subtle animation on load */
+    animation: fadeIn 0.5s ease-out;
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--text-main);
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.login-title span {
+    color: var(--accent-color);
+}
+
+.login-error {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: var(--danger);
+    border: 1px solid var(--danger);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.login-input {
+    padding: 12px 15px;
+    background-color: var(--input-dark); /* Dark input background */
+    border: 1px solid #52525b;
+    border-radius: 8px;
+    color: var(--text-main);
+    font-size: 1rem;
+    background: #18181b;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.login-input::placeholder {
+    color: #71717a;
+}
+
+/* Neon Glow on Focus */
+.login-input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.login-btn {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: var(--accent-color);
+    color: #000; /* Black text on neon blue is high contrast */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.login-btn:hover {
+    background-color: #38bdf8; /* Slightly lighter blue */
+    box-shadow: 0 0 15px var(--accent-glow);
+    transform: translateY(-1px);
+}
+
+.login-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
