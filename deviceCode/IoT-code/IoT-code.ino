@@ -14,15 +14,15 @@
 // ==========================================
 // 1. CONFIGURATION
 // ==========================================
-const char* ssid = "KOMPTELNET_8BDA";
-const char* password = "26641799";
+const char* ssid = "your_ssid";
+const char* password = "password";
 
 // Azure IoT Hub Settings
-const char* mqtt_broker = "iot-esp32-hub-23ffc2af.azure-devices.net";
-const char* device_id = "esp32-01";
-const char* device_key = "S6bkD4tN3J6E+zV9SR5swLIct04XGfaOw4qoOkgujUE="; 
+const char* mqtt_broker = "iot_hub_link";
+const char* device_id = "device_id";
+const char* device_key = "primary_key_from_device_in_iot_hub";
 
-const char* publish_topic = "devices/esp32-01/messages/events/";
+const char* publish_topic = "devices/device_id/messages/events/";
 
 // ==========================================
 // 2. HARDWARE SETUP
@@ -266,6 +266,6 @@ void loop() {
   display.print("Signal: "); display.print(WiFi.RSSI()); display.println(" dBm");
   display.display();
 
-  // 5. Wait 30 seconds before next check
+  // 5. Wait 60 seconds before next check
   delay(60000); 
 }
